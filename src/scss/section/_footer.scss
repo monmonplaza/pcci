@@ -1,0 +1,39 @@
+.footer-box {
+    padding: 1.5rem;
+    border-right: 1px solid $light-color;
+    min-height: 20rem;
+  
+    ul {
+        list-style: none;
+        li {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: $light-color;
+            text-decoration: none;
+        }
+    }
+
+    .info {
+        margin-bottom: 2rem;
+        i {
+            font-size: 1.2rem;
+            padding-right: .8rem;
+        }
+    }
+}
+
+
+
+.last {
+    border-right: none;
+}
+
+.copyright {
+    background-color: darken($primary-color, 10);
+    color: $light-color;
+    p {
+        margin: 0;
+    }
+}

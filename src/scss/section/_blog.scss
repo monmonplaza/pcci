@@ -1,0 +1,24 @@
+.blog-wrapper {
+    border: 1px solid $lightgray-color;
+    margin-bottom: 1rem;
+}
+
+.blog-content {
+    padding: 1rem;
+    height: 100%;
+    min-height: 5rem;
+    
+    ul {
+        list-style: none;
+        margin-bottom: 20px;
+        li {
+            display: inline-block;
+            font-size: .8rem;
+            margin-right: .5rem;
+            i {
+                font-size: .8rem;
+                color: $primary-color;
+            }
+        }
+    }
+}

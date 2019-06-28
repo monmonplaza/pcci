@@ -1,0 +1,57 @@
+.page-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), $banner-reg-bg;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 2rem;
+
+  .page-header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.form-biz-reg {
+  p {
+    margin: 1rem 0;
+    font-weight: 600;
+    border-bottom: 1px solid $dark-color;
+    padding: 0.5rem;
+  }
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+  h2 {
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid $primary-color;
+    text-transform: uppercase;
+  }
+}
+
+.action-btn {
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 0.5rem;
+  }
+}
+
+.reg {
+  h2 {
+    font-size: 2.5rem;
+
+    @include media-query(600px) {
+      font-size: 1.5rem;
+
+    }
+  }
+
+
+}

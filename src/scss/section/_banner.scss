@@ -1,0 +1,60 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $banner-bg;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+
+
+
+    .banner-content {
+        color: $light-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        form {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                padding: .5rem .9rem;
+                width: 25rem;
+                height: 4rem;
+                border: none;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+            }
+
+            button,
+            a {
+                display: inline-block;
+                margin-left: 5px;
+                height: 4rem;
+                width: 5rem;
+                padding: 1.3rem .9rem;
+                border: none;
+                border-top-right-radius: 30px;
+                border-bottom-right-radius: 30px;
+                text-decoration: none;
+            }
+        }
+
+        small {
+            font-size: .7rem;
+            opacity: .8;
+
+            @include media-query(600px) {
+                font-size: .3rem;
+            }
+
+        }
+    }
+}

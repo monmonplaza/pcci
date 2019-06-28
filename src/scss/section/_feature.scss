@@ -1,0 +1,39 @@
+.business-box {
+ box-shadow: 2px 2px 3px rgba(0,0,0,0.2)   ;
+    min-height: 40rem;
+    border: 1px solid $lightgray-color;
+}
+
+.business--info {
+    padding: 1rem;
+    h4 {
+        font-size: .8rem;
+        margin-bottom: 5px;
+    }
+ p{
+     display: block;
+     margin-bottom: 1.2rem;
+    }
+  
+}
+
+.business--primary {
+    position: relative;
+    img {
+        object-fit: cover;
+        min-height: 40rem;
+        display:block;
+    }
+    h3 {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: $light-color;
+        line-height: 1.1;
+        span {
+            font-size: 1rem;
+            font-weight: 300;
+            
+        }
+    }  
+}

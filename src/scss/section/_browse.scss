@@ -1,0 +1,47 @@
+.browse {
+    background: $primary-color;
+}
+
+.browser-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 70vh;
+
+    ul {
+        margin: 0 10px;
+        list-style: none;
+
+        li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+.browse-header {
+    width: 72%;
+
+    h3 {
+        font-size: 2.5rem;
+        line-height: 1;
+        margin-bottom: 5rem;
+    }
+
+    .bar {
+        width: 60%;
+        height: 5px;
+        background: $light-color;
+    }
+}
+
+.browser-wrapper {
+    img {
+        object-fit: cover;
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+}
