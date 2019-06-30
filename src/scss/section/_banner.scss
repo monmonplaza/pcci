@@ -1,6 +1,6 @@
 .banner {
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $banner-bg;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,22 +27,18 @@
             input {
                 padding: .5rem .9rem;
                 width: 25rem;
-                height: 4rem;
+                height: 2rem;
                 border: none;
-                border-top-left-radius: 30px;
-                border-bottom-left-radius: 30px;
             }
 
             button,
             a {
                 display: inline-block;
                 margin-left: 5px;
-                height: 4rem;
+                height: 2rem;
                 width: 5rem;
-                padding: 1.3rem .9rem;
+                padding: .5rem .9rem;
                 border: none;
-                border-top-right-radius: 30px;
-                border-bottom-right-radius: 30px;
                 text-decoration: none;
             }
         }
@@ -55,6 +51,41 @@
                 font-size: .3rem;
             }
 
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin-bottom: 2rem;
+
+        li {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            text-align: center;
+            margin-right: 1.5rem;
+            padding: .3rem;
+            background: $primary-color;
+            width: 6rem;
+            height: 6rem;
+            border-radius: .3rem;
+            cursor: pointer;
+            transition: .5s ease;
+
+            &:hover {
+                background: darken($primary-color, 20);
+            }
+
+            i {
+                font-size: 1.5rem;
+
+            }
+
+            a {
+                color: $light-color;
+                text-decoration: none;
+            }
         }
     }
 }

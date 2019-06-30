@@ -24,7 +24,7 @@ button {
         text-align: center;
 
         @include media-query (600px) {
-            font-size: 2rem;
+            font-size: 1.5rem;
             width: 100%;
         }
     }
@@ -37,22 +37,26 @@ button {
         input {
             padding: .5rem .9rem;
             width: 25rem;
-            height: 2.5rem;
+            height: 2rem;
             border: none;
-            border-top-left-radius: 30px;
-            border-bottom-left-radius: 30px;
 
             @include media-query (600px) {
-                width: 16rem;
+                width: 13rem;
+
+                &::placeholder {
+                    font-size: .7rem;
+                }
             }
         }
 
         button {
-            padding: .7rem .9rem;
+            display: inline-block;
             margin-left: 5px;
+            height: 2rem;
+            width: 5rem;
+            padding: .5rem .9rem;
             border: none;
-            border-top-right-radius: 20px;
-            border-bottom-right-radius: 20px;
+            text-decoration: none;
         }
     }
 }

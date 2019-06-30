@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "gulp.js",
+  "homepage": "https://monmonplaza.github.io/pcci/",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "gulp-uglify": "^3.0.2"
   },
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "gulp": "^4.0.2"
   }
 }
