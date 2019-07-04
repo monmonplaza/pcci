@@ -1,45 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap");
 
 p,
 li,
 a,
-input[type='text'],
-input[type='submit'],
+input,
+input,
 textarea {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 button {
-    font-size: 1rem !important;
+  font-size: 1rem;
 }
 
 p {
-    margin-bottom: .5rem
+  margin-bottom: 0.5rem;
 }
 
-
 h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: .8rem;
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 h3 {
-    font-size: 1.5rem;
-    margin-bottom: .8rem;
+  font-size: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 h4 {
-    font-size: 1.3rem;
-    margin-bottom: .8rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
 }
 
-
-
 small {
-    font-size: .9rem;
-    margin-bottom: .5rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
 }

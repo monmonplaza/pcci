@@ -1,28 +1,25 @@
-@import './abstract/variables';
-@import './abstract/function';
-@import './abstract/mixin';
-@import './abstract/typography';
+@import "./abstract/variables";
+@import "./abstract/function";
+@import "./abstract/mixin";
+@import "./abstract/typography";
 
-
-@import './base/global';
-@import './base/normalize';
-@import './base/grid';
-@import './base/utilities';
-@import './base/component';
-
+@import "./base/global";
+@import "./base/normalize";
+@import "./base/grid";
+@import "./base/utilities";
+@import "./base/component";
 
 //index page
-@import './section/header';
-@import './section/banner';
-@import './section/feature';
-@import './section/browse';
-@import './section/blog';
-@import './section/footer';
+@import "./section/header";
+@import "./section/banner";
+@import "./section/feature";
+@import "./section/browse";
+@import "./section/blog";
+@import "./section/footer";
+@import "./section/mobile";
 
-@import './section/mobile';
-
-
-@import './page/register';
-@import './page/contact';
-@import './page/search';
-@import './page/single-biz';
+@import "./page/register";
+@import "./page/contact";
+@import "./page/search";
+@import "./page/single-biz";
+@import "./page/feature";

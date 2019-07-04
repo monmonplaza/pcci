@@ -1,91 +1,99 @@
 .banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), $banner-bg;
-    height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    $banner-bg;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+
+  .banner-content {
+    color: $light-color;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
 
+    h1 {
+      font-size: 4rem;
+    }
+    img {
+      @include media-query(420px) {
+        width: 80%;
+      }
+    }
 
+    form {
+      display: flex;
+      justify-content: space-between;
 
-    .banner-content {
+      input {
+        padding: 1.4rem 0.9rem;
+        width: 25rem;
+        height: 2rem;
+        border: none;
+        font-size: 1.3rem;
+        outline: none;
+        &::placeholder {
+          font-size: 1rem;
+          font-style: italic;
+        }
+      }
+
+      button,
+      a {
+        display: inline-block;
+        margin-left: 5px;
+        width: 5rem;
+        padding: 0.8rem 0.9rem;
+        border: none;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+    }
+
+    small {
+      font-size: 0.7rem;
+      opacity: 0.8;
+
+      @include media-query(600px) {
+        font-size: 0.3rem;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 2rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+      margin-right: 1.5rem;
+      padding: 0.3rem;
+      background: $primary-color;
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      transition: 0.5s ease;
+
+      &:hover {
+        background: darken($primary-color, 20);
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      a {
         color: $light-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h1 {
-            font-size: 4rem;
-        }
-
-        form {
-            display: flex;
-            justify-content: space-between;
-
-            input {
-                padding: .5rem .9rem;
-                width: 25rem;
-                height: 2rem;
-                border: none;
-            }
-
-            button,
-            a {
-                display: inline-block;
-                margin-left: 5px;
-                height: 2rem;
-                width: 5rem;
-                padding: .5rem .9rem;
-                border: none;
-                text-decoration: none;
-            }
-        }
-
-        small {
-            font-size: .7rem;
-            opacity: .8;
-
-            @include media-query(600px) {
-                font-size: .3rem;
-            }
-
-        }
+        text-decoration: none;
+      }
     }
-
-    ul {
-        display: flex;
-        list-style: none;
-        margin-bottom: 2rem;
-
-        li {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            text-align: center;
-            margin-right: 1.5rem;
-            padding: .3rem;
-            background: $primary-color;
-            width: 6rem;
-            height: 6rem;
-            border-radius: .3rem;
-            cursor: pointer;
-            transition: .5s ease;
-
-            &:hover {
-                background: darken($primary-color, 20);
-            }
-
-            i {
-                font-size: 1.5rem;
-
-            }
-
-            a {
-                color: $light-color;
-                text-decoration: none;
-            }
-        }
-    }
+  }
 }

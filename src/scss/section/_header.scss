@@ -1,105 +1,126 @@
 header {
-    background: transparent;
-    width: 100vw;
-    height: 4rem;
-    line-height: 4rem;
-    overflow: hidden;
+  background: transparent;
+  width: 100vw;
+  height: 4rem;
+  line-height: 4rem;
+  overflow: hidden;
 
-    nav {
-        ul {
-            list-style: none;
-        }
-
-        li {
-            display: inline-block;
-            margin-left: 1.3rem;
-
-            a {
-                text-decoration: none;
-                color: $dark-color;
-            }
-        }
-    }
-}
-
-.toggle-menu {
-    position: absolute;
-    right: 20px;
-    top: 5px;
-
-    i {
-        color: $dark-color;
-        font-size: 2rem;
-        cursor: pointer;
-    }
-}
-
-.side-nav {
-    position: fixed;
-    top: 0px;
-    left: 0;
-    height: 100vh;
-    background-color: $primary-color;
-    width: 0;
-    z-index: 9999;
-    transition: all .6s ease-in-out;
-    transform-origin: right;
-    box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
-
-    overflow: hidden;
-
+  nav {
     ul {
-        list-style: none;
-        margin-top: 1rem;
+      list-style: none;
     }
 
     li {
-        margin-bottom: 20px;
-        padding: 0 20px 0 60px;
-        text-align: right;
-    }
+      display: inline-block;
+      margin-left: 1.3rem;
 
-    a {
-        color: $light-color;
+      a {
         text-decoration: none;
-        padding: 20px 10px;
-        font-size: 2rem;
+        color: $dark-color;
+      }
+    }
+  }
+
+  a {
+    font-size: 0.8rem;
+  }
+}
+
+.toggle-menu {
+  position: absolute;
+  left: 20px;
+  top: 5px;
+
+  i {
+    color: $dark-color;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+}
+
+.login-signup {
+  ul {
+    list-style: none;
+    li {
+      display: inline-block;
+      margin-right: 10px;
+      a {
+        text-decoration: none;
+        padding: 3px;
+        border-radius: 3px;
+      }
+      .btn-login {
+        background: $primary-color;
+        color: $light-color;
+        border: 2px solid $primary-color;
+      }
+    }
+  }
+}
+
+.side-nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  height: 100vh;
+  background-color: $primary-color;
+  width: 0;
+  z-index: 9999;
+  transition: all 0.6s ease-in-out;
+  transform-origin: right;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.2);
+
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    margin-top: 1rem;
+  }
+
+  li {
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+  }
+
+  a {
+    color: $light-color;
+    text-decoration: none;
+    padding: 20px 10px;
+    font-size: 1.2rem;
+  }
+
+  .close {
+    margin-bottom: 1.5rem;
+    display: inline-block;
+
+    i {
+      transform: rotate(45deg);
+    }
+  }
+
+  .sidenav-info {
+    color: $light-color;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+
+    p {
+      font-size: 0.9rem;
     }
 
-    .close {
-        margin-bottom: 1.5rem;
+    .sidenav-social {
+      list-style: none;
+
+      li {
         display: inline-block;
+        margin-left: 0.5rem;
+        text-align: left;
+        padding: 0.5rem;
 
         i {
-            transform: rotate(45deg);
+          color: $light-color;
         }
+      }
     }
-
-    .sidenav-info {
-        color: $light-color;
-        position: absolute;
-        bottom: 1.5rem;
-        right: 1rem;
-        text-align: right;
-
-        p {
-            font-size: .9rem;
-        }
-
-        .sidenav-social {
-            list-style: none;
-
-
-            li {
-                display: inline-block;
-                margin-left: .5rem;
-                text-align: right;
-                padding: .5rem;
-
-                i {
-                    color: $light-color;
-                }
-            }
-        }
-    }
+  }
 }

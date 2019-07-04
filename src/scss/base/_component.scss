@@ -1,164 +1,241 @@
 .btn {
-    padding: .5rem 1.5rem;
-    display: inline-block;
-    text-decoration: none;
-    border-radius: 15px;
-    transition: all .5s ease;
-    margin-top: 10px;
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.5s ease;
+  margin-top: 10px;
 }
 
 button {
-    border: none;
+  border: none;
 }
 
 .page-banner {
-    background: {
-        size: cover;
-        position: center bottom;
-        repeat: no-repeat;
+  background: {
+    size: cover;
+    position: center bottom;
+    repeat: no-repeat;
+  }
+
+  .page-header {
+    font-size: 2.5rem;
+    color: $light-color;
+    text-align: center;
+
+    @include media-query(600px) {
+      font-size: 1.5rem;
+      width: 100%;
+    }
+  }
+  a {
+    margin: 0 auto;
+    display: block;
+    width: 90%;
+    img {
+      margin: 0 auto 10px;
+      display: block;
+      @include media-query(450px) {
+        width: 80%;
+      }
+    }
+  }
+
+  height: 30vh;
+
+  form {
+    display: flex;
+    @include media-query(450px) {
+      margin-left: 6px;
+    }
+    input {
+      padding: 1.4rem 0.9rem;
+      width: 25rem;
+      height: 2rem;
+      border: none;
+      font-size: 1.3rem;
+      outline: none;
+      &::placeholder {
+        font-size: 1rem;
+        font-style: italic;
+      }
+      @include media-query(450px) {
+        width: 15rem;
+      }
     }
 
-    .page-header {
-        font-size: 2.5rem;
-        color: $light-color;
-        text-align: center;
+    @include media-query(600px) {
+      width: 1rem;
 
-        @include media-query (600px) {
-            font-size: 1.5rem;
-            width: 100%;
-        }
+      &::placeholder {
+        font-size: 1rem;
+      }
     }
+  }
 
-    height: 30vh;
+  button,
+  a {
+    display: inline-block;
+    margin-left: 5px;
 
-    form {
-        display: flex;
-
-        input {
-            padding: .5rem .9rem;
-            width: 25rem;
-            height: 2rem;
-            border: none;
-
-            @include media-query (600px) {
-                width: 13rem;
-
-                &::placeholder {
-                    font-size: .7rem;
-                }
-            }
-        }
-
-        button {
-            display: inline-block;
-            margin-left: 5px;
-            height: 2rem;
-            width: 5rem;
-            padding: .5rem .9rem;
-            border: none;
-            text-decoration: none;
-        }
-    }
+    // width: 5rem;
+    padding: 0.8rem 0.9rem;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+  }
 }
 
 select {
+  font-size: 1rem;
+  // margin-top: -.5rem;
+
+  option {
     font-size: 1rem;
-    // margin-top: -.5rem;
-
-    option {
-        font-size: 1rem;
-    }
+  }
 }
-
 
 .input,
 select,
 textarea {
-    padding: .5rem;
-    border: none;
-    border-bottom: 1px solid $dark-color;
-    width: 100%;
-    margin-bottom: .9rem;
-    outline: none;
-    background: none;
-    font-size: 1rem;
+  padding: 0.5rem;
+  border: none;
+  border-bottom: 1px solid $dark-color;
+  width: 100%;
+  margin-bottom: 0.9rem;
+  outline: none;
+  background: none;
+  font-size: 1rem;
 }
 
 .input::placeholder,
 select::placeholder,
 textarea::placeholder {
-    font-style: italic;
-
+  font-style: italic;
 }
 
 textarea {
-    height: 10rem;
-    font-size: 1rem;
+  height: 10rem;
+  font-size: 1rem;
 }
 
 .scroll {
-    padding-right: 20px;
+  padding-right: 20px;
 
-    &::-webkit-scrollbar {
-        width: .6rem;
-        padding-left: .5rem;
-    }
+  &::-webkit-scrollbar {
+    width: 0.6rem;
+    padding-left: 0.5rem;
+  }
 
-    /* Track */
-    &::-webkit-scrollbar-track {
-        box-shadow: inset 0 0 5px grey;
-        border-radius: 20px;
-    }
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 20px;
+  }
 
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-        background: #d8d8d8;
-        border-radius: 20px;
-    }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #d8d8d8;
+    border-radius: 20px;
+  }
 
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-        background: #a3a3a3;
-    }
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
+  }
 }
 
-
-
 .banner-biz {
-    position: relative;
-    min-height: 250px;
+  position: relative;
+  min-height: 250px;
 
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    z-index: 1;
+  }
+
+  .overlay {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(58, 58, 58, 0.9)
+    );
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .biz-name {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 1rem;
+    z-index: 3;
+    color: $light-color;
+    font-weight: 300;
+    margin: 0;
+  }
+}
+
+//MODAL
+.login-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  background: rgba(0, 0, 0, 0.8);
+  //display: flex;
+  .main-bg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  form {
+    width: 280px;
+    height: 300px;
+    background: $light-color;
+    padding: 10px;
+    border-radius: 5px;
     img {
-        position: absolute;
-        left: 0;
-        top: 0;
-        object-fit: cover;
+      display: block;
+      margin: 0 auto 30px;
+    }
+    .form-group {
+      label {
+        display: block;
+        font-size: 0.8rem;
+        margin-bottom: 0.5rem;
+      }
+      input {
         width: 100%;
-        height: 250px;
-        z-index: 1;
+        margin-bottom: 0.5rem;
+        padding: 5px;
+      }
+    }
+    p {
+      font-size: 0.5rem;
     }
 
-    .overlay {
-        background-image: linear-gradient(to bottom,
-                rgba(0, 0, 0, 0),
-                rgba(58, 58, 58, 0.9));
-        z-index: 2;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+    ul li {
+      display: inline-block;
+      margin-right: 10px;
+      a,
+      button {
+        font-size: 0.8rem;
+        padding: 5px;
+        text-decoration: none;
+      }
     }
-
-    .biz-name {
-        position: absolute;
-        bottom: 0.5rem;
-        left: 1rem;
-        z-index: 3;
-        color: $light-color;
-        font-weight: 300;
-        margin: 0;
-    }
-
-
+  }
 }

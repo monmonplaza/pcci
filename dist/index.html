@@ -1,204 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css?cb=1561861666177">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css?cb=1562205960493" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="side-nav">
-        <ul>
-            <li><a href="#" class="close"><i class="fa fa-plus"></i></a></li>
-            <li><a href="contact.html">Contact</a></li>
+      <ul>
+        <li class="clearfix">
+          <a href="#" class="close float-right"><i class="fa fa-plus"></i></a>
+        </li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
 
-            <li><a href="register.html">Register</a></li>
-
+      <div class="sidenav-info">
+        <p>
+          202 Maharlika Hwy,<br />
+          Brgy. San Francisco, <br />
+          San Pablo City
+        </p>
+        <p>
+          (+6349)503-1559<br />
+          917-895-1224
+        </p>
+        <p>info@spcdirectory.com.ph</p>
+        <ul class="sidenav-social">
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
         </ul>
-
-        <div class="sidenav-info">
-            <p>202 Maharlika Hwy,<br> Brgy. San Francisco, <br>
-                San Pablo City</p>
-            <p>(+6349)503-1559<br>
-                917-895-1224</p>
-            <p>info@spcdirectory.com.ph</p>
-            <ul class="sidenav-social">
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
-        </div>
+      </div>
     </div>
 
     <main>
-        <header class="clearfix">
-            <div class="container">
-                <div class="brand float-left">
-                    <a href="index.html">
-                        <img src="./images/logo.png" alt="" width="50%">
-                    </a>
-                </div>
-                <div class="toggle-menu text-right">
-                    <i class="fa fa-bars"></i>
-                </div>
+      <header class="clearfix">
+        <div class="container">
+          <div class="toggle-menu text-right">
+            <i class="fa fa-bars"></i>
+          </div>
 
-                <nav class="float-right">
-                    <ul>
-                        <li><a href="contact.html">Contact</a></li>
+          <nav class="float-left lg-only">
+            <ul>
+              <li><a href="feature.html">Feature</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
 
-                        <li><a href="register.html">Register</a></li>
+          <div class="login-signup float-right">
+            <ul>
+              <li><a href="#" class="btn-login" id="open-login">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <section class="banner">
+        <div class="banner-content text-center">
+          <a href="index.html"
+            ><img src="./images/logo.png" alt="" class="text-center"
+          /></a>
+          <form action="">
+            <input type="text" placeholder="Find restaurant, salon, spa, bar" />
+            <a href="search.html" class="bg-primary">Search</a>
+          </form>
+          <small class="text-left py-1"
+            >Keywords: restaurant, gasoline, hotel, travel inn, resort, spa,
+            salon</small
+          >
 
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="banner">
-            <div class="banner-content">
-                <h1 class="text-center">San Pablo Business <em>Directory</em></h1>
-                <form action="">
-                    <input type="text" placeholder="Find restaurant, salon, spa, bar">
-                    <a href="search.html" class="bg-primary">Search</a>
-                </form>
-                <small class="text-left py-1">Keywords: restaurant, gasoline, hotel, travel inn, resort, spa,
-                    salon</small>
+          <ul>
+            <li>
+              <i class="fa fa-swimming-pool"></i>
+              <a href="#">Resort</a>
+            </li>
+            <li>
+              <i class="fa fa-hotel"></i>
+              <a href="#">Hotel</a>
+            </li>
+            <li>
+              <i class="fa fa-spa"></i>
+              <a href="#">Spa</a>
+            </li>
+            <li>
+              <i class="fa fa-building"></i>
+              <a href="#">Travel Inn</a>
+            </li>
+            <li>
+              <i class="fa fa-bus-alt"></i>
+              <a href="#">Travel Tours</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <i class="fa fa-basketball-ball"></i>
+              <a href="#">Sport Facilities</a>
+            </li>
+            <li>
+              <i class="fa fa-utensils"></i>
+              <a href="#">Restaurant</a>
+            </li>
 
-                <ul>
-                    <li>
-                        <i class="fa fa-swimming-pool"></i>
-                        <a href="#">Resort</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-hotel"></i>
-                        <a href="#">Hotel</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-spa"></i>
-                        <a href="#">Spa</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-building"></i>
-                        <a href="#">Travel Inn</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-bus-alt"></i>
-                        <a href="#">Travel Tours</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <i class="fa fa-basketball-ball"></i>
-                        <a href="#">Sport Facilities</a>
-                    </li>
-                    <li>
-                        <i class="fa fa-utensils"></i>
-                        <a href="#">Restaurant</a>
-                    </li>
+            <li>
+              <i class="fa fa-glass-martini-alt"></i>
+              <a href="#">Bar & Grill</a>
+            </li>
 
-                    <li>
-                        <i class="fa fa-glass-martini-alt"></i>
-                        <a href="#">Bar & Grill</a>
-                    </li>
+            <li>
+              <i class="fa fa-gas-pump"></i>
+              <a href="#">Gasoline Station</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- BUSINESS ONE -->
 
-                    <li>
-                        <i class="fa fa-gas-pump"></i>
-                        <a href="#">Gasoline Station</a>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-        <!-- BUSINESS ONE -->
-
-
-        <section class="bg-gray py-4 text-center">
-            <h2 class="text-dark">Register Your Business At SPCBiz</h2>
-            <a href="register.html" class="btn bg-primary">Register Now!</a>
-        </section>
-
+      <section class="bg-gray py-4 text-center">
+        <h2 class="text-dark">Register Your Business At SPCBiz</h2>
+        <a href="register.html" class="btn bg-primary">Register Now!</a>
+      </section>
     </main>
 
-
     <footer class="bg-primary py-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="footer-box">
-                        <h3> Our Location</h3>
-                        <div class="d-flex info">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <p>202 Maharlika Hwy, <br>Brgy. San Francisco, <br>
-                                San Pablo City</p>
-                        </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="footer-box">
+              <h3>Our Location</h3>
+              <div class="d-flex info">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>
+                  202 Maharlika Hwy, <br />Brgy. San Francisco, <br />
+                  San Pablo City
+                </p>
+              </div>
 
-                        <div class="d-flex info">
-                            <i class="fa fa-phone"></i>
-                            <p>(+6349) 503-1559<br>
-                                917-895-1224</p>
-                        </div>
+              <div class="d-flex info">
+                <i class="fa fa-phone"></i>
+                <p>
+                  (+6349) 503-1559<br />
+                  917-895-1224
+                </p>
+              </div>
 
-                        <div class="d-flex info">
-                            <i class="fa fa-envelope"></i>
-                            <p>info@spcdirectory.com.ph</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="footer-box ">
-                        <h3> Our Location</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Add your Business</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Advertise with us</a></li>
-                        </ul>
-                        <h3> Quick Links</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Browse Category</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Search Business</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Log In</a></li>
-
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="footer-box">
-                        <h3>Navigation</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> About</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Contact Us</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Feedback </a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> FAQS</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Terms & Conditions</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Pricavy Policy</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="footer-box last">
-                        <h3>Follow Us</h3>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> Instagram </a></li>
-                            <li><a href="#"><i class="fa fa-caret-right"></i> YouTube</a></li>
-                        </ul>
-
-                    </div>
-                </div>
+              <div class="d-flex info">
+                <i class="fa fa-envelope"></i>
+                <p>info@spcdirectory.com.ph</p>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-box ">
+              <h3>Our Location</h3>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Add your Business</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Advertise with us</a
+                  >
+                </li>
+              </ul>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Browse Category</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Search Business</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Log In</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-box">
+              <h3>Navigation</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> About</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Contact Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Feedback </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> FAQS</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Pricavy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-box last">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Twitter</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Instagram </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> YouTube</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
     </footer>
     <div class="copyright text-center ">
-        <p class="p-1">&copy; 2019 San Pablo Directory. All Right Reserved</p>
+      <p class="p-1">&copy; 2019 San Pablo Directory. All Right Reserved</p>
     </div>
 
-    <script src="./js/all.js?cb=1561861666177"></script>
-</body>
+    <div class="login-modal" id="login-modal">
+      <div class="main-bg">
+        <div class="main-form">
+          <form action="" id="login-modal" class="form-wrapper">
+            <img src="./images/logo_blk.png" alt="" width="80%" />
+            <div class="form-group">
+              <label for="">Username/Email</label>
+              <input type="text" />
+            </div>
 
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="password" />
+            </div>
+            <p class="text-right">Not yet a register? Register here</p>
+            <ul>
+              <li><button class="bg-primary">Login</button></li>
+              <li>
+                <a href="#" class="close bg-secondary" id="close-login"
+                  >Cancel</a
+                >
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/all.js?cb=1562205960493"></script>
+  </body>
 </html>
