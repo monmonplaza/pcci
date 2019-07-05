@@ -6,59 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/main.css?cb=1561861666177" />
+    <link rel="stylesheet" href="./css/main.css?cb=1562284513033" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
 </head>
 
 <body>
-    <div class="side-nav">
-        <ul>
-            <li><a href="#" class="close"><i class="fa fa-plus"></i></a></li>
-            <li><a href="contact.html">Contact</a></li>
-
-            <li><a href="register.html">Register</a></li>
-
-        </ul>
-
-        <div class="sidenav-info">
-            <p>202 Maharlika Hwy,<br> Brgy. San Francisco, <br>
-                San Pablo City</p>
-            <p>(+6349) 503-1559<br>
-                917-895-1224</p>
-            <p>info@spcdirectory.com.ph</p>
-            <ul class="sidenav-social">
-                <li><i class="fab fa-facebook"></i></li>
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-instagram"></i></li>
-            </ul>
-        </div>
-    </div>
-
-    <main>
-        <header class="clearfix">
-            <div class="container">
-                <div class="brand float-left">
-                    <a href="index.html">
-                        <img src="./images/logo.png" alt="" width="50%">
-                    </a>
-                </div>
-                <div class="toggle-menu text-right">
-                    <i class="fa fa-bars"></i>
-                </div>
-
-                <nav class="float-right">
-                    <ul>
+        <div class="side-nav">
+                <ul>
+                        <li class="clearfix">
+                          <a href="#" class="close float-right"><i class="fa fa-plus"></i></a>
+                        </li>
+                        <li><a href="feature.html">Feature</a></li>
                         <li><a href="contact.html">Contact</a></li>
-
                         <li><a href="register.html">Register</a></li>
-
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                      </ul>
+          
+                <div class="sidenav-info">
+                  <p>
+                    202 Maharlika Hwy,<br />
+                    Brgy. San Francisco, <br />
+                    San Pablo City
+                  </p>
+                  <p>
+                    (+6349)503-1559<br />
+                    917-895-1224
+                  </p>
+                  <p>info@spcdirectory.com.ph</p>
+                  <ul class="sidenav-social">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                  </ul>
+                </div>
+              </div>
+          
+              <main>
+                <header class="clearfix">
+                  <div class="container">
+                    <div class="toggle-menu text-right">
+                      <i class="fa fa-bars"></i>
+                    </div>
+          
+                    <nav class="float-left lg-only">
+                      <ul>
+                        <li><a href="feature.html">Feature</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                      </ul>
+                    </nav>
+          
+                    <div class="login-signup float-right">
+                      <ul>
+                        <li><a href="#" class="btn-login" id="open-login">Log In</a></li>
+                        <li><a href="#">Sign Up</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </header>
         <section class="page-banner">
-            <h3 class="page-header">Cibo and Bella</h3>
+            
             <div class="page-banner-content">
+                    <a href="index.html"><img src="./images/logo_sm.png" alt="" class="text-center" /></a>
                 <form action="">
                     <input type="text" placeholder="Find restaurant, salon, spa, bar" />
                     <button class="bg-primary">Search</button>
@@ -276,11 +284,39 @@
             </div>
         </div>
     </footer>
+    
+    <div class="login-modal" id="login-modal">
+            <div class="main-bg">
+              <div class="main-form">
+                <form action="" id="login-modal" class="form-wrapper">
+                    <img src="./images/logo_blk.png" alt="" width="80%" />
+                  <div class="form-group">
+                    <label for="">Username/Email</label>
+                    <input type="text" />
+                  </div>
+      
+                  <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" />
+                  </div>
+                  <p class="text-right">Not yet a register? Register here</p>
+                  <ul>
+                    <li><button class="bg-primary">Login</button></li>
+                    <li>
+                      <a href="#" class="close bg-secondary" id="close-login"
+                        >Cancel</a
+                      >
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+          </div>
     <div class="copyright text-center ">
         <p class="p-1">&copy; 2019 San Pablo Directory. All Right Reserved</p>
     </div>
 
-    <script src="./js/all.js?cb=1561861666177"></script>
+    <script src="./js/all.js?cb=1562284513033"></script>
 </body>
 
 </html>

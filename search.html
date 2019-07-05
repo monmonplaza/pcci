@@ -1,392 +1,448 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css?cb=1562284513033" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./css/main.css?cb=1561861666177" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" />
-</head>
-
-<body>
-  <div class="side-nav">
-    <div>
-      <li><a href="#" class="close"><i class="fa fa-plus"></i></a></li>
-      <li><a href="contact.html">Contact</a></li>
-
-      <li><a href="register.html">Register</a></li>
-
-    </div>
-
-    <div class="sidenav-info">
-      <p>202 Maharlika Hwy,<br> Brgy. San Francisco, <br>
-        San Pablo City</p>
-      <p>(+6349) 503-1559<br>
-        917-895-1224</p>
-      <p>info@spcdirectory.com.ph</p>
-      <ul class="sidenav-social">
-        <li><i class="fab fa-facebook"></i></li>
-        <li><i class="fab fa-twitter"></i></li>
-        <li><i class="fab fa-instagram"></i></li>
+  <body>
+    <div class="side-nav">
+      <ul>
+        <li class="clearfix">
+          <a href="#" class="close float-right"><i class="fa fa-plus"></i></a>
+        </li>
+        <li><a href="feature.html">Feature</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
+
+      <div class="sidenav-info">
+        <p>
+          202 Maharlika Hwy,<br />
+          Brgy. San Francisco, <br />
+          San Pablo City
+        </p>
+        <p>
+          (+6349)503-1559<br />
+          917-895-1224
+        </p>
+        <p>info@spcdirectory.com.ph</p>
+        <ul class="sidenav-social">
+          <li><i class="fab fa-facebook"></i></li>
+          <li><i class="fab fa-twitter"></i></li>
+          <li><i class="fab fa-instagram"></i></li>
+        </ul>
+      </div>
     </div>
-  </div>
 
-  <main>
-    <header class="clearfix">
-      <div class="container">
-        <div class="brand float-left">
-          <a href="index.html">
-            <img src="./images/logo.png" alt="" width="50%">
-          </a>
+    <main>
+      <header class="clearfix">
+        <div class="container">
+          <div class="toggle-menu text-right">
+            <i class="fa fa-bars"></i>
+          </div>
+
+          <nav class="float-left lg-only">
+            <ul>
+              <li><a href="feature.html">Feature</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </nav>
+
+          <div class="login-signup float-right">
+            <ul>
+              <li><a href="#" class="btn-login" id="open-login">Log In</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="toggle-menu text-right">
-          <i class="fa fa-bars"></i>
+      </header>
+      <section class="page-banner">
+        <div class="page-banner-content">
+          <a href="index.html"
+            ><img src="./images/logo_sm.png" alt="" class="text-center"
+          /></a>
+          <form action="">
+            <input type="text" placeholder="Find restaurant, salon, spa, bar" />
+            <button class="bg-primary">Search</button>
+          </form>
         </div>
+      </section>
 
-        <nav class="float-right">
-          <ul>
-            <li><a href="contact.html">Contact</a></li>
+      <section class="py-4 search-result">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-8">
+              <!-- Result Box -->
+              <div class="result-box">
+                <div class="biz-img hide-on-sm">
+                  <img src="./images/cibobela.jpg" alt="" />
+                </div>
+                <div class="biz-details">
+                  <div class="biz-header">
+                    <h3>Cibo and Bella Café</h3>
+                    <a href="single-biz.html" class="bg-secondary btn"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="biz-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="biz-address">
+                          <p>
+                            #47 Balagtas blvd.,<br />
+                            Brgy. III-C<br />
+                            San Pablo City Laguna<br />
+                            Philippines, 4000
+                          </p>
+                          <ul class="keywords">
+                            <li class="category-orange">Restaurants</li>
+                            <li class="category-darkgreen">Food</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="biz-info">
+                          <div class="wrapper">
+                            <ul>
+                              <li>
+                                <i class="fa fa-phone"></i> (+6349) 562-1412
+                              </li>
+                              <li>
+                                <i class="fa fa-envelope"></i>
+                                info_add@spcbiz.com
+                              </li>
+                              <li><i class="fa fa-clock"></i> 24/7</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Box End -->
 
-            <li><a href="register.html">Register</a></li>
+              <!-- Result Box -->
+              <div class="result-box">
+                <div class="biz-img hide-on-sm">
+                  <img src="./images/samuel.jpg" alt="" />
+                </div>
+                <div class="biz-details">
+                  <div class="biz-header">
+                    <h3>Samuel's Plate</h3>
+                    <a href="single-biz.html" class="bg-secondary btn"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="biz-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="biz-address">
+                          <p>
+                            Brgy. San Roque<br />
+                            San Pablo City Laguna<br />
+                            Philippines, 4000
+                          </p>
+                          <ul class="keywords">
+                            <li class="category-orange">Restaurants</li>
+                            <li class="category-darkgreen">Food</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="biz-info">
+                          <div class="wrapper">
+                            <ul>
+                              <li>
+                                <i class="fa fa-phone"></i> (+6349) 562-1412
+                              </li>
+                              <li>
+                                <i class="fa fa-envelope"></i>
+                                info_add@spcbiz.com
+                              </li>
+                              <li><i class="fa fa-clock"></i> 24/7</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Box End -->
 
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <section class="page-banner">
-      <h3 class="page-header">Search Result</h3>
-      <div class="page-banner-content">
-        <form action="">
-          <input type="text" placeholder="Find restaurant, salon, spa, bar" />
-          <button class="bg-primary">Search</button>
-        </form>
-      </div>
-    </section>
+              <!-- Result Box -->
+              <div class="result-box">
+                <div class="biz-img hide-on-sm">
+                  <img src="./images/shakeys.jpg" alt="" />
+                </div>
+                <div class="biz-details">
+                  <div class="biz-header">
+                    <h3>Shakey's</h3>
+                    <a href="single-biz.html" class="bg-secondary btn"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="biz-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="biz-address">
+                          <p>
+                            Maharlika Hi-Way,<br />
+                            Brgy. San Rafael<br />
+                            San Pablo City Laguna<br />
+                            Philippines, 4000
+                          </p>
+                          <ul class="keywords">
+                            <li class="category-orange">Restaurants</li>
+                            <li class="category-darkgreen">Food</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="biz-info">
+                          <div class="wrapper">
+                            <ul>
+                              <li>
+                                <i class="fa fa-phone"></i> (+6349) 562-1412
+                              </li>
+                              <li>
+                                <i class="fa fa-envelope"></i>
+                                info_add@spcbiz.com
+                              </li>
+                              <li><i class="fa fa-clock"></i> 24/7</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Box End -->
 
-    <section class="py-4 search-result">
+              <!-- Result Box -->
+              <div class="result-box">
+                <div class="biz-img hide-on-sm">
+                  <img src="./images/suki.jpg" alt="" />
+                </div>
+                <div class="biz-details">
+                  <div class="biz-header">
+                    <h3>Suki Japanese Soukutsu</h3>
+                    <a href="single-biz.html" class="bg-secondary btn"
+                      >Details</a
+                    >
+                  </div>
+                  <div class="biz-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="biz-address">
+                          <p>
+                            Brgy. San Roque<br />
+                            San Pablo City Laguna<br />
+                            Philippines, 4000
+                          </p>
+                          <ul class="keywords">
+                            <li class="category-orange">Restaurants</li>
+                            <li class="category-darkgreen">Food</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="biz-info">
+                          <div class="wrapper">
+                            <ul>
+                              <li>
+                                <i class="fa fa-phone"></i> (+6349) 562-1412
+                              </li>
+                              <li>
+                                <i class="fa fa-envelope"></i>
+                                info_add@spcbiz.com
+                              </li>
+                              <li><i class="fa fa-clock"></i> 24/7</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Box End -->
+            </div>
+            <div class="col-md-4 hide-on-sm">
+              <div class="advertisement">
+                <img src="./images/ad-1.jpg" alt="" class="img-fluid" />
+                <br />
+                <img src="./images/ad-2.jpg" alt="" class="img-fluid" />
+                <br />
+                <img src="./images/ad-3.jpg" alt="" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray py-4 text-center reg">
+        <h2 class="text-dark">Register Your Business At SPCBiz</h2>
+        <a href="register.html" class="btn bg-primary">Register Now!</a>
+      </section>
+    </main>
+    <footer class="bg-primary py-3">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-8">
-            <!-- Result Box -->
-            <div class="result-box">
-              <div class="biz-img hide-on-sm">
-                <img src="./images/cibobela.jpg" alt="" />
+          <div class="col-md-3">
+            <div class="footer-box">
+              <h3>Our Location</h3>
+              <div class="d-flex info">
+                <i class="fa fa-map-marker-alt"></i>
+                <p>
+                  202 Maharlika Hwy, <br />Brgy. San Francisco, <br />
+                  San Pablo City
+                </p>
               </div>
-              <div class="biz-details">
-                <div class="biz-header">
-                  <h3>Cibo and Bella Café</h3>
-                  <a href="single-biz.html" class="bg-secondary btn">Details</a>
-                </div>
-                <div class="biz-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="biz-address">
-                        <p>
-                          #47 Balagtas blvd.,<br> Brgy. III-C<br />
-                          San Pablo City Laguna<br />
-                          Philippines, 4000
-                        </p>
-                        <ul class="keywords">
-                          <li class="category-orange">Restaurants</li>
-                          <li class="category-darkgreen">Food</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="biz-info">
-                        <div class="wrapper">
-                          <ul>
-                            <li>
-                              <i class="fa fa-phone"></i> (+6349) 562-1412
-                            </li>
-                            <li>
-                              <i class="fa fa-envelope"></i>
-                              info_add@spcbiz.com
-                            </li>
-                            <li><i class="fa fa-clock"></i> 24/7</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
+              <div class="d-flex info">
+                <i class="fa fa-phone"></i>
+                <p>
+                  (+6349) 503-1559<br />
+                  917-895-1224
+                </p>
+              </div>
+
+              <div class="d-flex info">
+                <i class="fa fa-envelope"></i>
+                <p>info@spcdirectory.com.ph</p>
               </div>
             </div>
-            <!-- Box End -->
-
-            <!-- Result Box -->
-            <div class="result-box">
-              <div class="biz-img hide-on-sm">
-                <img src="./images/samuel.jpg" alt="" />
-              </div>
-              <div class="biz-details">
-                <div class="biz-header">
-                  <h3>Samuel's Plate</h3>
-                  <a href="single-biz.html" class="bg-secondary btn">Details</a>
-                </div>
-                <div class="biz-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="biz-address">
-                        <p>
-                          Brgy. San Roque<br />
-                          San Pablo City Laguna<br />
-                          Philippines, 4000
-                        </p>
-                        <ul class="keywords">
-                          <li class="category-orange">Restaurants</li>
-                          <li class="category-darkgreen">Food</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="biz-info">
-                        <div class="wrapper">
-                          <ul>
-                            <li>
-                              <i class="fa fa-phone"></i> (+6349) 562-1412
-                            </li>
-                            <li>
-                              <i class="fa fa-envelope"></i>
-                              info_add@spcbiz.com
-                            </li>
-                            <li><i class="fa fa-clock"></i> 24/7</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Box End -->
-
-            <!-- Result Box -->
-            <div class="result-box">
-              <div class="biz-img hide-on-sm">
-                <img src="./images/shakeys.jpg" alt="" />
-              </div>
-              <div class="biz-details">
-                <div class="biz-header">
-                  <h3>Shakey's</h3>
-                  <a href="single-biz.html" class="bg-secondary btn">Details</a>
-                </div>
-                <div class="biz-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="biz-address">
-                        <p>
-                          Maharlika Hi-Way,<br> Brgy. San Rafael<br />
-                          San Pablo City Laguna<br />
-                          Philippines, 4000
-                        </p>
-                        <ul class="keywords">
-                          <li class="category-orange">Restaurants</li>
-                          <li class="category-darkgreen">Food</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="biz-info">
-                        <div class="wrapper">
-                          <ul>
-                            <li>
-                              <i class="fa fa-phone"></i> (+6349) 562-1412
-                            </li>
-                            <li>
-                              <i class="fa fa-envelope"></i>
-                              info_add@spcbiz.com
-                            </li>
-                            <li><i class="fa fa-clock"></i> 24/7</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Box End -->
-
-            <!-- Result Box -->
-            <div class="result-box">
-              <div class="biz-img hide-on-sm">
-                <img src="./images/suki.jpg" alt="" />
-              </div>
-              <div class="biz-details">
-                <div class="biz-header">
-                  <h3>Suki Japanese Soukutsu </h3>
-                  <a href="single-biz.html" class="bg-secondary btn">Details</a>
-                </div>
-                <div class="biz-body">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="biz-address">
-                        <p>
-                          Brgy. San Roque<br />
-                          San Pablo City Laguna<br />
-                          Philippines, 4000
-                        </p>
-                        <ul class="keywords">
-                          <li class="category-orange">Restaurants</li>
-                          <li class="category-darkgreen">Food</li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="biz-info">
-                        <div class="wrapper">
-                          <ul>
-                            <li>
-                              <i class="fa fa-phone"></i> (+6349) 562-1412
-                            </li>
-                            <li>
-                              <i class="fa fa-envelope"></i>
-                              info_add@spcbiz.com
-                            </li>
-                            <li><i class="fa fa-clock"></i> 24/7</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Box End -->
-
-
           </div>
-          <div class="col-md-4 hide-on-sm">
-            <div class="advertisement">
-              <img src="./images/ad-1.jpg" alt="" class="img-fluid">
-              <br>
-              <img src="./images/ad-2.jpg" alt="" class="img-fluid">
-              <br>
-              <img src="./images/ad-3.jpg" alt="" class="img-fluid">
-            </div>
 
+          <div class="col-md-3">
+            <div class="footer-box ">
+              <h3>Our Location</h3>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Add your Business</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Advertise with us</a
+                  >
+                </li>
+              </ul>
+              <h3>Quick Links</h3>
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Browse Category</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Search Business</a
+                  >
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Log In</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-box">
+              <h3>Navigation</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> About</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Contact Us</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Feedback </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> FAQS</a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Terms & Conditions</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i class="fa fa-caret-right"></i> Pricavy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="footer-box last">
+              <h3>Follow Us</h3>
+              <ul>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Facebook</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Twitter</a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> Instagram </a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa fa-caret-right"></i> YouTube</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-
-    <section class="bg-gray py-4 text-center reg">
-      <h2 class="text-dark">Register Your Business At SPCBiz</h2>
-      <a href="register.html" class="btn bg-primary">Register Now!</a>
-    </section>
-  </main>
-  <footer class="bg-primary py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="footer-box">
-            <h3>Our Location</h3>
-            <div class="d-flex info">
-              <i class="fa fa-map-marker-alt"></i>
-              <p>
-                202 Maharlika Hwy, <br />Brgy. San Francisco, <br />
-                San Pablo City
-              </p>
+    </footer>
+    <div class="login-modal" id="login-modal">
+      <div class="main-bg">
+        <div class="main-form">
+          <form action="" id="login-modal" class="form-wrapper">
+            <img src="./images/logo_blk.png" alt="" width="80%" />
+            <div class="form-group">
+              <label for="">Username/Email</label>
+              <input type="text" />
             </div>
 
-            <div class="d-flex info">
-              <i class="fa fa-phone"></i>
-              <p>
-                (+6349) 503-1559<br />
-                917-895-1224
-              </p>
+            <div class="form-group">
+              <label for="">Password</label>
+              <input type="password" />
             </div>
-
-            <div class="d-flex info">
-              <i class="fa fa-envelope"></i>
-              <p>info@spcdirectory.com.ph</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="footer-box ">
-            <h3>Our Location</h3>
+            <p class="text-right">Not yet a register? Register here</p>
             <ul>
+              <li><button class="bg-primary">Login</button></li>
               <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Add your Business</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Advertise with us</a>
+                <a href="#" class="close bg-secondary" id="close-login"
+                  >Cancel</a
+                >
               </li>
             </ul>
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Browse Category</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Search Business</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Log In</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="footer-box">
-            <h3>Navigation</h3>
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> About</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Contact Us</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Feedback </a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> FAQS</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Terms & Conditions</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Pricavy Policy</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-3">
-          <div class="footer-box last">
-            <h3>Follow Us</h3>
-            <ul>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Facebook</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Twitter</a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> Instagram </a>
-              </li>
-              <li>
-                <a href="#"><i class="fa fa-caret-right"></i> YouTube</a>
-              </li>
-            </ul>
-          </div>
+          </form>
         </div>
       </div>
     </div>
-  </footer>
-  <div class="copyright text-center ">
-    <p class="p-1">&copy; 2019 San Pablo Directory. All Right Reserved</p>
-  </div>
+    <div class="copyright text-center ">
+      <p class="p-1">&copy; 2019 San Pablo Directory. All Right Reserved</p>
+    </div>
 
-  <script src="./js/all.js?cb=1561861666177"></script>
-</body>
-
+    <script src="./js/all.js?cb=1562284513033"></script>
+  </body>
 </html>
