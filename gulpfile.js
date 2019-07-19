@@ -42,13 +42,11 @@ function scssTask() {
 // JS task
 
 function jsTask() {
-  return (
-    gulp
-      .src(files.jsPath)
-      .pipe(concat("all.js"))
-      //.pipe(uglify())
-      .pipe(gulp.dest(files.distJsPath))
-  );
+  return gulp
+    .src(files.jsPath)
+    .pipe(concat("all.js"))
+    .pipe(uglify())
+    .pipe(gulp.dest(files.distJsPath));
 }
 
 // Cachebusting task
